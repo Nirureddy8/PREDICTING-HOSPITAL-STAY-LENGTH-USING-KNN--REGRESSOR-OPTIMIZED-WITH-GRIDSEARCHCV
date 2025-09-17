@@ -1,0 +1,23 @@
+Location:
+Represents the country for which the data has been recorded.
+Example: AUS indicates Australia.
+
+Time:
+The year when the data was observed or recorded.
+Example: 1992, 1994, 1995, etc.
+
+Hospital_Stay:
+Average length of hospital stay (In days) for patients.
+Example: 6.6 in 1992 indicates that, on average, patients in Australia stayed in the hospital for 6.6 days.
+
+MRI_Units:
+Number of MRI (Magnetic Resonance Imaging) units per 1,000,000 population.
+Example: 1.43 in 1992 means Australia had approximately 1.43 MRI machines per million people.
+
+CT_Scanners:
+Number of CT (Computed Tomography) scanners per 1,000,000 population.
+Example: 16.71 in 1992 means there were 16.71 CT scanners per million people in Australia.
+
+Hospital_Beds:
+Number of hospital beds available per 1,000 population.
+Example: 1.43 in 1992 indicates there were 1.43 hospital beds available per 1,000 people.

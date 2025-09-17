@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Hospital Stay</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+ 
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="../static/css/base1.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/vendor1.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="../static/js/modernizr.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+<body id="top">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-logo" >
+            <a href="/home">
+                <h3 style="color: black; padding-bottom: 50px; " !important>Hospital Stay</h3>
+            </a>
+        </div>
+
+        <div class="header-content">
+    
+            <nav class="row header-nav-wrap" style="margin-left: 100px; " !important>
+                <ul class="header-nav">
+                    <li><a  href="/home" title="Intro" style="color: black;" !important>ABOUT</a></li>
+                    <li><a  href="/prediction" title="About" style="color: black;" !important>PREDICTION</a></li>
+                    <li><a  href="/charts" title="About" style="color: black;" !important>CHARTS</a></li>
+                    <li><a  href="/performance" title="About" style="color: black;" !important>PERFORMANCE</a></li>
+                    
+                </ul>
+            </nav> <!-- end header-nav-wrap -->
+
+            <a href="/logout" class="btn btn--stroke btn--small">LOGOUT</a>
+
+        </div> <!-- end header-content -->
+
+        <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+
+    </header> 
+
+
+    <!-- hero
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+
+        <div class="s-about__section s-about__section--profile">
+
+            <div class="right-vert-line"></div>
+
+            <div class="row">
+                <div class="column large-6 medium-8 tab-full">
+
+                    <div class="section-intro" data-num="ABOUT" data-aos="fade-up">
+                        <h3 class="subhead">About </h3>
+                        <h1 class="display-1">Predicting Hospital Stay Duration for Better Resource Management</h1>
+                    </div>
+
+                    <div class="profile-pic" data-aos="fade-up">
+                        <img src="../static/images/p5.jpg" alt="Hospital Image">
+                    </div>
+
+                    <h3 data-aos="fade-up">Overview</h3>
+
+                    <p data-aos="fade-up">
+                    It focuses on predicting the duration of hospital stays for patients based on various factors such as demographics, medical history, and current condition. 
+                    By utilizing advanced machine learning models, healthcare providers can optimize resource allocation, reduce costs, and enhance patient care. This system aims to provide 
+                    accurate and actionable predictions to aid in effective decision-making.
+                    </p>
+
+                </div>
+            </div>
+
+        </div> <!-- end s-about__section--profile -->
+
+        <div class="s-about__section">
+
+            <div class="row">
+                <div class="column">
+                    <h3 data-aos="fade-up">Techniques</h3>
+                </div>
+            </div>
+
+            <div class="row block-large-1-2 block-900-full features">
+
+                <div class="column" data-aos="fade-up">
+                    <div class="feature">
+                        <h6>K-Nearest Neighbors (KNN)</h6>
+                        <p>
+                            The KNN algorithm is used for classification, leveraging its simplicity and effectiveness to predict outcomes based on proximity to similar data points.
+                            </p>
+                    </div>
+                </div> <!-- end column -->
+                <div class="column" data-aos="fade-up">
+                    <div class="feature">
+                        <h6>Grid Search Optimization</h6>
+                        <p>
+                            Grid Search is employed to find the optimal hyperparameters for the machine learning model, ensuring maximum accuracy and performance.
+                            </p>
+                    </div>
+                </div> <!-- end column -->
+                
+            </div> <!-- features -->
+
+        </div> <!-- end s-about__section -->
+
+    </section> <!-- end s-about -->
+
+
+
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer h-dark-bg">
+        
+        <!-- <div class="right-vert-line"></div> -->
+
+      
+        <div class="row s-footer__bottom">
+            <div class="column large-full ss-copyright">
+                <span>© Copyright HospitalStay</span> 
+                <span>Design by <a href="/">Hospital Stay</a></span>
+            </div> <!-- end ss-copyright -->
+
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0l8 9h-6v15h-4v-15h-6z"/></svg>
+                </a>
+            </div> <!-- end ss-go-top -->
+        </div> <!-- end s-footer__bottom -->
+
+    </footer> <!-- end s-footer -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> 
+
+<!-- end photoSwipe background -->
+    <!-- Java Script
+    ================================================== -->
+    <script src="../static/js/jquery-3.2.1.min.js"></script>
+    <script src="../static/js/plugins.js"></script>
+    <script src="../static/js/main.js"></script>
+
+</body>
+</html>

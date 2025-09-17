@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Hospital Stay</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+ 
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="../static/css/base1.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/vendor1.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="../static/js/modernizr.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    
+    <link rel="manifest" href="site.webmanifest">
+    <style>
+        /* Flash Message Popup Styling */
+.flash-message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    width: 300px;
+    display: none;
+}
+
+.flash-message-content {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    animation: fade-in-out 4s;
+}
+
+.flash-message-content.success {
+    border-left: 5px solid green;
+}
+
+.flash-message-content.danger {
+    border-left: 5px solid red;
+}
+
+@keyframes fade-in-out {
+    0% { opacity: 0; transform: translateY(-10px); }
+    10% { opacity: 1; transform: translateY(0); }
+    90% { opacity: 1; }
+    100% { opacity: 0; transform: translateY(-10px); }
+}
+
+    </style>
+    
+
+</head>
+
+<body id="top">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div>T</div>
+            <div>E</div>
+            <div>J</div>
+        </div>
+    </div>
+
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-logo">
+            <a href="/">
+                <h3 style="color: white; padding-bottom: 50px;" !important>Hospital Stay</h3>
+            </a>
+        </div>
+
+        <div class="header-content">
+    
+            <nav class="row header-nav-wrap" style="margin-left: 100px; " !important>
+                <ul class="header-nav">
+                    <li><a class="smoothscroll active" href="/" title="Intro">Home</a></li>
+                    
+                    
+                </ul>
+            </nav> <!-- end header-nav-wrap -->
+            <a href="/login" class="btn btn--stroke btn--small">LOGIN</a>
+            
+        </div> <!-- end header-content -->
+
+        <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+
+    </header> 
+
+
+
+
+
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer h-dark-bg">
+        
+        <div class="right-vert-line"></div>
+
+        <div class="row s-footer__main">
+            <div class="column large-6">
+                <div class="section-intro" data-aos="fade-up">
+                    <h3 class="subhead">REGISTER</h3>
+        
+                    <h1 class="display-1">
+                        If you already have an account LogIn <a href="/login">Click</a>
+                    </h1>
+                </div>
+        
+                
+            </div>
+        
+            <div class="column large-5">
+                <div class="footer-contacts">
+                    <form action="/register" method="POST">
+                        <div class="footer-contact-block" data-aos="fade-up">
+                            <h5 class="footer-contact-block__header">
+                                UserName
+                            </h5>
+                            <p class="footer-contact-block__content">
+                                <input type="text" name="name" id="username" style="color: white;" required>
+                            </p>
+                        </div> <!-- end footer-contact-block -->
+                        <div class="footer-contact-block" data-aos="fade-up">
+                            <h5 class="footer-contact-block__header">
+                                Email
+                            </h5>
+                            <p class="footer-contact-block__content">
+                                <input type="text" name="email" id="username" style="color: white;" required>
+                            </p>
+                        </div>
+                        <div class="footer-contact-block" data-aos="fade-up">
+                            <h5 class="footer-contact-block__header">
+                                Password
+                            </h5>
+                            <p class="footer-contact-block__content">
+                                <input type="password" name="password" id="password" style="color: white;" required>
+                            </p>
+                        </div> <!-- end footer-contact-block -->
+                        <div class="footer-contact-block" data-aos="fade-up">
+                            <h5 class="footer-contact-block__header">
+                                Confirm Password
+                            </h5>
+                            <p class="footer-contact-block__content">
+                                <input type="password" name="confirm_password" id="password" style="color: white;" required>
+                            </p>
+                        </div>
+                        <br>
+                        <div class="footer-email-us">
+                            <button type="submit" class="btn btn--primary h-full-width">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+         <!-- end s-footer__main -->
+
+        <div class="row s-footer__bottom">
+            <div class="column large-full ss-copyright">
+                <span>© Copyright Ethos 2019</span> 
+                <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+            </div> <!-- end ss-copyright -->
+
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0l8 9h-6v15h-4v-15h-6z"/></svg>
+                </a>
+            </div> <!-- end ss-go-top -->
+        </div> <!-- end s-footer__bottom -->
+
+    </footer>
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> 
+    <!-- Flash Message Popup -->
+    <div id="flash-message" class="flash-message">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+            <div class="flash-message-content {{ category }}">
+                {{ message }}
+            </div>
+            {% endfor %}
+        {% endif %}
+        {% endwith %}
+    </div>
+
+    <!-- Flash Message Popup -->
+
+
+
+<!-- end photoSwipe background -->
+ 
+    <!-- Java Script
+    ================================================== -->
+   
+    <script>
+        // Display Flash Messages
+        document.addEventListener("DOMContentLoaded", function () {
+            const flashMessage = document.getElementById("flash-message");
+            if (flashMessage) {
+                flashMessage.style.display = "block";
+                setTimeout(() => {
+                    flashMessage.style.display = "none";
+                }, 4000); // Auto-hide after 4 seconds
+            }
+        });
+    </script>
+    
+    <script src="../static/js/jquery-3.2.1.min.js"></script>
+    <script src="../static/js/plugins.js"></script>
+    <script src="../static/js/main.js"></script>
+
+</body>
+</html>

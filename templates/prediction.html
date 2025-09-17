@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8" />
+    <title>Hospital Stay</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="../static/css/base1.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="stylesheet" href="../static/css/vendor1.css" />
+
+    <!-- script
+    ================================================== -->
+    <script src="../static/js/modernizr.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+
+    <link rel="manifest" href="site.webmanifest" />
+  </head>
+
+  <body id="top">
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+      <div id="loader" class="dots-fade">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+      <div class="header-logo">
+        <a href="/home">
+          <h3 style="color: white; padding-bottom: 50px" !important>
+            Hospital Stay
+          </h3>
+        </a>
+      </div>
+
+      <div class="header-content">
+        <nav class="row header-nav-wrap" style="margin-left: 100px" !important>
+          <ul class="header-nav">
+            <li><a href="/home" title="Intro" !important>ABOUT</a></li>
+            <li>
+              <a href="/prediction" title="About" !important>PREDICTION</a>
+            </li>
+            <li><a href="/charts" title="About" !important>CHARTS</a></li>
+            <li>
+              <a href="/performance" title="About" !important>PERFORMANCE</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- end header-nav-wrap -->
+
+        <a href="/logout" class="btn btn--stroke btn--small">LOGOUT</a>
+      </div>
+      <!-- end header-content -->
+
+      <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+    </header>
+
+    <!-- hero
+    ================================================== -->
+    <section id="services" class="s-services target-section h-dark-bg">
+      <div class="row s-services__content">
+        <div class="vert-line"></div>
+
+        <div class="column large-6 s-services__leftcol">
+          <div class="section-intro" data-num="PREDICTION" data-aos="fade-up">
+            <h3 class="subhead">PREDICTION PAGE</h3>
+
+            <h1 class="display-1">Enter your inputs here.</h1>
+          </div>
+
+          <p class="lead" data-aos="fade-up">
+            Suspendisse eu ligula. Duis arcu tortor, suscipit eget, imperdiet
+            nec, imperdiet iaculis, ipsum. Nulla facilisi. Etiam rhoncus.
+            Praesent blandit laoreet nibh. Donec quam felis, ultricies nec,
+            pellentesque eu, pretium quis, sem. Cras sagittis. Praesent egestas
+            tristique nibh.
+          </p>
+        </div>
+        <!-- end  s-services--leftcol -->
+
+        <div class="column large-6">
+          <style>
+            /* Styling the form container */
+            form {
+              background-color: #f9f9f9 transparent;
+              border-radius: 10px;
+              padding: 20px;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            /* Styling the labels */
+            form label {
+              font-size: 1rem;
+              color: #333;
+              margin-bottom: 5px;
+              display: block;
+            }
+
+            /* Styling input fields and dropdowns */
+            form input[type="text"],
+            form select {
+              width: 100%;
+              padding: 10px;
+              margin-bottom: 15px;
+              border: 1px solid #ccc;
+              border-radius: 5px;
+              font-size: 1rem;
+              color: #555;
+              background-color: #fff;
+              transition: border-color 0.3s ease;
+            }
+
+            form input[type="text"]:focus,
+            form select:focus {
+              border-color: #007bff;
+              outline: none;
+            }
+
+            /* Styling the submit button */
+            form button {
+              background-color: #007bff;
+              color: #fff;
+              font-size: 1rem;
+              padding: 10px 15px;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+              transition: background-color 0.3s ease;
+            }
+
+            form button:hover {
+              background-color: #0056b3;
+            }
+          </style>
+
+          <form action="prediction" method="post" data-aos="fade-up">
+            <ul class="services-list">
+              <li class="services-list__item is-active">
+                <div class="services-list__item-header">
+                  <h5>INPUTS FORM</h5>
+                </div>
+                <div class="services-list__item-body">
+                  <label for="location" style="color: white" !important
+                    >Location(Country):</label
+                  >
+                  <select id="location" name="location" required>
+                    <option value="" disabled selected>Select Location</option>
+                    <option value="PRT">PRT</option>
+                    <option value="DEU">DEU</option>
+                    <option value="HUN">HUN</option>
+                    <option value="LTU">LTU</option>
+                    <option value="KOR">KOR</option>
+                    <option value="RUS">RUS</option>
+                    <option value="CAN">CAN</option>
+                    <option value="CZE">CZE</option>
+                    <option value="NLD">NLD</option>
+                    <option value="JPN">JPN</option>
+                    <option value="AUT">AUT</option>
+                    <option value="AUS">AUS</option>
+                    <option value="BEL">BEL</option>
+                    <option value="DNK">DNK</option>
+                    <option value="FIN">FIN</option>
+                    <option value="FRA">FRA</option>
+                    <option value="GRC">GRC</option>
+                    <option value="IRL">IRL</option>
+                    <option value="ITA">ITA</option>
+                    <option value="LUX">LUX</option>
+                    <option value="NZL">NZL</option>
+                    <option value="POL">POL</option>
+                    <option value="SVK">SVK</option>
+                    <option value="ESP">ESP</option>
+                    <option value="TUR">TUR</option>
+                    <option value="GBR">GBR</option>
+                    <option value="USA">USA</option>
+                    <option value="EST">EST</option>
+                    <option value="ISR">ISR</option>
+                    <option value="SVN">SVN</option>
+                    <option value="ISL">ISL</option>
+                    <option value="LVA">LVA</option>
+                  </select>
+
+                  <label for="time" style="color: white" !important
+                    >Time (Year):</label
+                  >
+                  <select id="time" name="time" required>
+                    <option value="" disabled selected>Select Year</option>
+                    <option value="1990">1990</option>
+                    <option value="1991">1991</option>
+                    <option value="1992">1992</option>
+                    <option value="1993">1993</option>
+                    <option value="1994">1994</option>
+                    <option value="1995">1995</option>
+                    <option value="1996">1996</option>
+                    <option value="1997">1997</option>
+                    <option value="1998">1998</option>
+                    <option value="1999">1999</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                    <option value="2030">2030</option>
+                  </select>
+
+                  <label for="mri_units" style="color: white" !important
+                    >Number of MRI Units per 1,000,000 population:</label
+                  >
+                  <input
+                    type="text"
+                    id="mri_units"
+                    name="mri_units"
+                    placeholder="Enter number of MRI units per 1,000,000 population"
+                    required
+                  />
+
+                  <label for="ct_scanners" style="color: white" !important
+                    >Number of CT Scanners per 1,000,000 population:</label
+                  >
+                  <input
+                    type="text"
+                    id="ct_scanners"
+                    name="ct_scanners"
+                    placeholder="Enter number of CT scanners per 1,000,000 population"
+                    required
+                  />
+
+                  <label for="hospital_beds" style="color: white" !important
+                    >Number of Hospital Beds available per 1,000
+                    population:</label
+                  >
+                  <input
+                    type="text"
+                    id="hospital_beds"
+                    name="hospital_beds"
+                    placeholder="Enter number of hospital beds available per 1,000 population"
+                    required
+                  />
+
+                  <button type="submit">Submit</button>
+                </div>
+              </li>
+              <!-- services-list__item -->
+            </ul>
+            <!-- end services-list -->
+          </form>
+        </div>
+      </div>
+      <!-- s-services__content -->
+    </section>
+
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer h-dark-bg">
+      <!-- <div class="right-vert-line"></div> -->
+
+      <div class="row s-footer__bottom">
+        <div class="column large-full ss-copyright">
+          <span>© Copyright HospitalStay</span>
+          <span>Design by <a href="/">Hospital Stay</a></span>
+        </div>
+        <!-- end ss-copyright -->
+
+        <div class="ss-go-top">
+          <a class="smoothscroll" title="Back to Top" href="#top">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path d="M12 0l8 9h-6v15h-4v-15h-6z" />
+            </svg>
+          </a>
+        </div>
+        <!-- end ss-go-top -->
+      </div>
+      <!-- end s-footer__bottom -->
+    </footer>
+    <!-- end s-footer -->
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+      <div class="pswp__bg"></div>
+      <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+        </div>
+
+        <div class="pswp__ui pswp__ui--hidden">
+          <div class="pswp__top-bar">
+            <div class="pswp__counter"></div>
+            <button
+              class="pswp__button pswp__button--close"
+              title="Close (Esc)"
+            ></button>
+            <button
+              class="pswp__button pswp__button--share"
+              title="Share"
+            ></button>
+            <button
+              class="pswp__button pswp__button--fs"
+              title="Toggle fullscreen"
+            ></button>
+            <button
+              class="pswp__button pswp__button--zoom"
+              title="Zoom in/out"
+            ></button>
+            <div class="pswp__preloader">
+              <div class="pswp__preloader__icn">
+                <div class="pswp__preloader__cut">
+                  <div class="pswp__preloader__donut"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"
+          >
+            <div class="pswp__share-tooltip"></div>
+          </div>
+          <button
+            class="pswp__button pswp__button--arrow--left"
+            title="Previous (arrow left)"
+          ></button>
+          <button
+            class="pswp__button pswp__button--arrow--right"
+            title="Next (arrow right)"
+          ></button>
+          <div class="pswp__caption">
+            <div class="pswp__caption__center"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end photoSwipe background -->
+    <!-- Java Script
+    ================================================== -->
+    <script src="../static/js/jquery-3.2.1.min.js"></script>
+    <script src="../static/js/plugins.js"></script>
+    <script src="../static/js/main.js"></script>
+  </body>
+</html>
